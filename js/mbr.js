@@ -42,10 +42,6 @@ function showCountryWal() {
 }
 /*NEW FUNCTION
 function showCountryEng() {
-    var eng = document.getElementById("ENG");
-    if (eng.style.visibility === 'hidden') {
-        eng.style.visibility = 'visible';
-    } else {
-        eng.style.visibility = 'hidden';
-    }
+    var show = document.getElementById("ENG");
+    var hide = document.getElementById("ENG");
 }*/

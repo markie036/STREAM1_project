@@ -26,13 +26,13 @@ nav.navbar-default{background-color: hsl(187, 40%, 65%)}
 .headMargin{margin-top:140px;}
 
 /*Trails*/
-
+#ENG, #SCO, #WAL{display: none;}
 
 /*Footer styles*/
 footer{background-color: #ffffff;}
 footer li{display: inline; padding-right:15px; }
 
-.mbrBut{margin:10px 0 25px 0}
+.mbrBut{margin:10px 10px 25px 0}
 video{width:100%}
 
 /*Back to top*/
