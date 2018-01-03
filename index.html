@@ -97,7 +97,7 @@
                     <div class="col-md-6">
                         <p><img class="img-responsive" src="img/mountain-biking.jpg"></p>
                         <p><img class="img-responsive" src="img/mountain-biking.jpg"></p>
-                        <a href="#"><i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true" id="topRight"></i></a>
+                        <a href="#" onclick="backTop()"><i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true" id="topRight"></i></a>
                     </div>
                 
                 </div>
@@ -140,8 +140,8 @@
                 
                         <h3>REQUEST AN INFO PACK.</h3>
                         <p>For more a more detailed analysis, request one of our info packs whcih will give you insight into the disciplines, how to get started and more insight in t the different tyoes of mountain bike.</p>
-                        <p><a class="btn btn-primary btn-lg" href="#" role="button">GET YOURS »</a></p>
-                        <a href="#">
+                        <p><a class="btn btn-primary btn-lg" href="#join" role="button">GET YOURS »</a></p>
+                        <a href="#" onclick="backTop()">
                             <i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true" id="topRight"></i>
                         </a>
                     </div>
@@ -172,7 +172,7 @@
                             <source src="Vids/filename.mp4">
                             <source src="Vids/filename.ogv">
                         </video>
-                    <a href="#">
+                    <a href="#" onclick="backTop()">
                         <i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true" id="topRight"></i>
                     </a>
                     </div>
@@ -199,6 +199,9 @@
                             </li>
                             <li class="nav-item">
                                 <button type="button" onclick="showCountryWal()" class="btn btn-default mbrBut" href="#WAL">WALES</button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" onclick="showAll()" class="btn btn-default mbrBut">ALL</button>
                             </li>
                         </ul>
                     </div>
@@ -301,7 +304,7 @@
                             </ul>
                         </div>
 
-                            <a href="#">
+                            <a href="#" onclick="backTop()">
                                 <i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true" id="topRight"></i>
                             </a>
                         </div>
@@ -370,17 +373,17 @@
                                     DISCIPLINE:
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input horizontal-gap" type="checkbox" value=""> CROSS COUNTRY
+                                            <input class="form-check-input horizontal-gap" type="checkbox" value="Cross Country"> CROSS COUNTRY
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input horizontal-gap" type="checkbox" value=""> ENDURO
+                                            <input class="form-check-input horizontal-gap" type="checkbox" value="Enduro"> ENDURO
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input horizontal-gap" type="checkbox" value=""> DOWNHILL
+                                            <input class="form-check-input horizontal-gap" type="checkbox" value="Downhill"> DOWNHILL
                                         </label>
                                     </div>
                                 </div>
@@ -390,14 +393,14 @@
                             <div class="row">
                                 <div class="col-md-2"></div>
                                 <div class="col-md-10">
-                                    <button type="button" input type="hidden" class="btn btn-success" name="redirect" value="thanks.html">SUBMIT</button>
-                                    <input type="submit" value="SUBMIT" class="btn btn-success">
+                                    <!--<button type="button" input type="hidden" class="btn btn-success" name="redirect" value="thanks.html">SUBMIT</button>-->
+                                    <input type="submit" value="SUBMIT" class="btn btn-success" onsubmit="validate()" onclick="window.open('thanks.html')">
                                 </div>
                                 <div class="col-md-2"></div>
                             </div>
                             
 
-                            <a href="#">
+                            <a href="#" onclick="backTop()">
                                 <i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true" id="topRight"></i>
                             </a>
 
