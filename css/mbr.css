@@ -1,11 +1,15 @@
-.navbar-default{background-image: none; background-color:"#727f7f"}
+/*Header styles*/
+#headerPic{
+    background-image: url("../img/main-desktop.jpg"); 
+    background-position: center center;
+    height:430px;
+    width: 100%;}
+.headMargin{margin-top:140px;}
 
-#headerPic{background-image: url("../img/skye-1400x500.jpg"); background-position: center center;
-    width:100%; height:430px;}
-
+/*Font styles*/
 body{font-family: 'Ubuntu', sans-serif;}
 
-/*Navigstion styles */
+/*Navigation styles */
 nav.navbar-default{background-color: hsl(187, 40%, 65%)}
 #navbar ul li a{color: white; }
 #navbar ul li a:hover{color: rgb(0, 62, 86); }
@@ -16,47 +20,70 @@ nav.navbar-default{background-color: hsl(187, 40%, 65%)}
 #disc{background-color:#4e8b65; padding: 15px 0 40px 0;}
 #videos{background-color:#e2d75a; padding: 15px 0 40px 0;}
 #trails{background-color:#76cae4; padding: 15px 0 40px 0;}
-#join{background-color: #b6d7a8;; padding: 15px 0 40px 0;}
-
-/*thanks styles*/
-.thanks{background-color:#e2d75a; }
-.thanks h1{font-size:60px; text-align: center;}
-
-/*Header styles*/
-.headMargin{margin-top:140px;}
+#join{background-color: #b6d7a8; padding: 15px 0 40px 0;}
+section a{color:#333; text-decoration:underline;}
 
 /*Trails*/
 #ENG, #SCO, #WAL{display: none;}
 
 /*Footer styles*/
-footer{background-color: #ffffff;}
+footer{background-color: #ffffff; display:block;}
 footer li{display: inline; padding-right:15px; }
+.icons{width: 40px; height: auto; padding-left: 10px;}
 
+/*CTA button styles*/
 .mbrBut{margin:10px 10px 25px 0}
+
+/*Video styles*/
 video{width:100%}
 
 /*Back to top*/
 #topRight{position:absolute; bottom:0; right:-80px;}
 .fa-chevron-circle-up{color: white}
 
-/*Form validation styles*/
-#error{display: bloc;; color:red;}
-.noerror{display: none;}
-#error{float:left}
-
 /*Bootstrap form*/
 #mbrForm{background-color: #a7d0dd; padding: 10px;}
 .vertical-gap{margin-bottom: 15px;}
 .horizontal-gap{padding-right: 15px;}
 
+/*Discipline - get info pack*/
+.brdr{border:#aec5b5 1px solid}
+.brdr h3, .brdr ul, .brdr p {color: #aec5b5}
+
+/*Media queries*/
 @media only screen and (min-width:480px) {
     .h{display: none;}
 }
 
 @media only screen and (max-width: 480px) {
-    #headerPic{background-image: url("../img/skye-480x250.jpg"); background-position: center center;
-    width:100%;height:300px;} 
+    #headerPic{background-image: url("../img/mainMob.jpg"); background-position: center center;
+    width:100%; height:300px;} 
     .headMargin{margin-top:50px;} 
-    footer li{display: ;}
-     
+    .hideMob{display: none;} 
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /*#headerPic{background-position: -250px, -40px; height:320px;}*/
+    #headerPic{background-image: url("../img/mainTablet.jpg"); background-position: center center;
+    width:100%; height:320px;}
+    #headerPic h3{width: 90%; padding-left:120px;}
+    /*Back to top*/
+    #topRight{position:absolute; bottom: -70px; right:10px;}
+    /* Section styles */
+    #what{padding: 15px 0 80px 0;}
+    #disc{padding: 15px 0 80px 0;}
+    #videos{padding: 15px 0 80px 0;}
+    #trails{padding: 15px 0 80px 0;}
+    #join{padding: 15px 0 80px 0;}
+}
+
+/*ipad Pro and similar*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    /*Back to top*/
+    #topRight{position:absolute; bottom: -70px; right:20px;}
+    /* Section styles */
+    #what{padding: 15px 0 80px 0;}
+    #disc{padding: 15px 0 80px 0;}
+    #videos{padding: 15px 0 80px 0;}
+    #trails{padding: 15px 0 80px 0;}
+    #join{padding: 15px 0 80px 0;}
