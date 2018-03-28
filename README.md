@@ -1,7 +1,7 @@
 # Mountain Biking Revealed
 This is a fully responsive front-end only wesbite that uses HTML, CSS, Javascript and Jquery on a bootstrap platform. No template was used. It consists of one page with 5 sections all navigable thorugh the main menu.
 
-##Live Demo
+#Live Demo
 Use this link for a deployed version of the site on github pages. INSERT LINK HERE
 
 ##Installation
